@@ -1,0 +1,104 @@
+*{
+    margin: 0; /*making own margin*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: border-box; 
+}
+
+
+.navbar{
+    height: 80px;
+    background-color: palevioletred;
+    color:aliceblue;
+    display: flex;
+}
+
+.nav-logo{
+    height:50px;
+    width: 80px;
+
+}
+.logo{
+    background-image: url(heart.png);
+    background-size: cover;
+    height: 80px;
+    width:80px;
+}
+
+.menu{
+    width:200px;
+    float:left;
+    height:60px;
+}
+
+ul{
+float:left;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.4 ease-out;
+}
+
+ul li a:hover{
+    color:orange;
+}
+
+.search{
+    width:330px;
+    float:left;
+    margin-left: 270px;
+
+}
+
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width:100px;
+    height:40px;
+    background: white;
+    border:1.5px solid black;
+    margin-top: 16px;
+    color:aliceblue;
+    border-right: none;
+    font-size: 12px;
+    float: left;
+    padding:10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius:5px;
+
+}
+
+.btn{
+    width:100px;
+    height: 40px;
+    background: pink;
+    border:2px solid whitesmoke;
+    margin-top: 12px;
+    color:black;
+    font-size: 15px;
+    border-bottom-right-radius:5px ;
+    border-top-right-radius:5px ;
+
+}
+
+.btn:focus{
+    outline:none;
+
+}
+
+.srch:focus{
+    outline:none;
+}
+
