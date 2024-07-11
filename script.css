@@ -1,17 +1,133 @@
 *{
-    margin: 0; /*making own margin*/
+    margin: 0;
+    padding: 0; /*making own margin*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: border-box; 
 }
 
+/*login-page*/
+.container{
+width:100%;
+height:100vh;
+background-image:url(baclground.png);
+background-size: cover;
+position: relative;
+}
 
+.form-box{
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 70px;
+    text-align: center;
+   
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: palevioletred;
+    position: relative;
+   
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius:3px;
+    background: palevioletred;
+    position: absolute;
+    bottom:-10px;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+
+.input-field{
+    background: transparent ;
+    margin: 12px 0 ;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+
+}
+
+input{
+     width: 100%;
+     background: transparent;
+     border:0;
+     outline: auto;
+     padding: 18px 16px;
+}
+
+.input-field i{
+   margin-right: 10px;
+    color: palevioletred;
+}
+
+form p{
+    text-align: center;
+    font-size: 13px;
+
+}
+
+form p a{
+    text-decoration: none;
+    color: palevioletred;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: palevioletred;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+.main{
+    width:100%;
+    background: linear-gradient(to top,rgba(228, 98, 218, 0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+/*
 .navbar{
     height: 80px;
     background-color: palevioletred;
     color:aliceblue;
     display: flex;
 }
-
+*/
 .nav-logo{
     height:50px;
     width: 80px;
@@ -22,6 +138,14 @@
     background-size: cover;
     height: 80px;
     width:80px;
+}
+
+.border{
+    border: 1.5px solid blanchedalmond;
+}
+
+.border:hover {
+    border: 2px solid white;
 }
 
 .menu{
@@ -65,17 +189,17 @@ ul li a:hover{
 
 .srch{
     font-family: 'Times New Roman', Times, serif;
-    width:100px;
-    height:40px;
+    width:200px;
+    height:50px;
     background: white;
     border:1.5px solid black;
-    margin-top: 16px;
+    margin-top: 14px;
     color:aliceblue;
     border-right: none;
-    font-size: 12px;
+    font-size: 13px;
     float: left;
     padding:10px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius:5px;
     border-top-left-radius:5px;
 
 }
@@ -83,22 +207,13 @@ ul li a:hover{
 .btn{
     width:100px;
     height: 40px;
-    background: pink;
+    background:none;
     border:2px solid whitesmoke;
     margin-top: 12px;
     color:black;
     font-size: 15px;
     border-bottom-right-radius:5px ;
-    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
 
-}
-
-.btn:focus{
-    outline:none;
-
-}
-
-.srch:focus{
-    outline:none;
 }
 
