@@ -1,219 +1,152 @@
 *{
     margin: 0;
     padding: 0; /*making own margin*/
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     border: border-box; 
 }
-
-/*login-page*/
-.container{
-width:100%;
-height:100vh;
-background-image:url(baclground.png);
-background-size: cover;
-position: relative;
-}
-
-.form-box{
-    width: 100%;
-    max-width: 400px;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    background: white;
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 70px;
-    text-align: center;
-   
-}
-
-.form-box h1{
-    font-size: 30px;
-    margin-bottom: 60px;
-    color: palevioletred;
-    position: relative;
-   
-}
-
-.form-box h1::after{
-    content: '';
-    width: 30px;
-    height: 4px;
-    border-radius:3px;
-    background: palevioletred;
-    position: absolute;
-    bottom:-10px;
-    left: 50%;
-    transform:translateX(-50%) ;
-}
-
-.input-field{
-    background: transparent ;
-    margin: 12px 0 ;
-    border-radius: 3px;
-    display: flex;
+body{
+    display:flex ;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-    max-height: 65px;
-    transition: max-height 0.5s;
-    overflow: hidden;
-
+    padding: 10px;
+    background:linear-gradient(130deg, #71b7e6,#9b59b6);
 
 }
 
-input{
-     width: 100%;
-     background: transparent;
-     border:0;
-     outline: auto;
-     padding: 18px 16px;
-}
-
-.input-field i{
-   margin-right: 10px;
-    color: palevioletred;
-}
-
-form p{
-    text-align: center;
-    font-size: 13px;
-
-}
-
-form p a{
-    text-decoration: none;
-    color: palevioletred;
-}
-
-.btn-field{
+.contain{
+    max-width: 600px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    background:#fff;
+    padding: 25px 30px;
+    border-radius: 3px;
 }
 
-.btn-field button{
-    flex-basis: 48%;
-    background: palevioletred;
-    height: 35px;
-    border-radius: 20px;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    transition: background 1s;
+.contain .title{
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+
+}
+.contain .title::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width:30px;
+    background: #71b7e6;
 }
 
-.input-group{
-    height: 280px;
+.contain form .user-detail{
+ display: flex;
+ flex-wrap:wrap ;
+ justify-content: space-between;
+ margin: 20px 0 10px 0;
 }
 
-.btn-field button.disable{
-    background: #eaeaea;
-    color: #555;
+form .user-detail .input-box{
+  margin-bottom: 15px;  
+width: calc(100% / 2 - 20px);
+
 }
-.main{
+.user-detail .input-box .details{
+    display: block;
+    font-weight:500;
+    margin: 4px;
+}
+
+.user-detail .input-box input {
+    height: 40px;
     width:100%;
-    background: linear-gradient(to top,rgba(228, 98, 218, 0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 109vh;
-
-}
-/*
-.navbar{
-    height: 80px;
-    background-color: palevioletred;
-    color:aliceblue;
-    display: flex;
-}
-*/
-.nav-logo{
-    height:50px;
-    width: 80px;
-
-}
-.logo{
-    background-image: url(heart.png);
-    background-size: cover;
-    height: 80px;
-    width:80px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 12px;
+    font-size: 14px;
+    border-bottom-width:2px;
+    border-color: #9b59b6;
+ 
 }
 
-.border{
-    border: 1.5px solid blanchedalmond;
+form .gender-details .gender-title{
+    font-size: 22px;
+    font-weight: 500;
 }
 
-.border:hover {
-    border: 2px solid white;
-}
-
-.menu{
-    width:200px;
-    float:left;
-    height:60px;
-}
-
-ul{
-float:left;
+form .gender-details .category{
+width: 80%;
 display: flex;
-justify-content: center;
+justify-content: space-between;
+margin: 12px 0;
+
+}
+
+.gender-details .category label{
+display: flex;
 align-items: center;
 }
 
-ul li{
-    list-style: none;
-    margin-left: 50px;
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    transition: 0.4 ease-out;
-}
-
-ul li a:hover{
-    color:orange;
-}
-
-.search{
-    width:330px;
-    float:left;
-    margin-left: 270px;
+.gender-details .category .dot{
+  height: 15px;
+  width: 15px;
+  background: #d9d9d9; ;
+border-radius: 50%;
+margin-right:10px;
+border: 3px solid transparent;
 
 }
 
-.srch{
-    font-family: 'Times New Roman', Times, serif;
-    width:200px;
-    height:50px;
-    background: white;
-    border:1.5px solid black;
-    margin-top: 14px;
-    color:aliceblue;
-    border-right: none;
-    font-size: 13px;
-    float: left;
-    padding:10px;
-    border-bottom-left-radius:5px;
-    border-top-left-radius:5px;
+#dot-1:checked ~ .category label .one,
+    #dot-2:checked ~ .category label .two,
+        #dot-3:checked ~ .category label .three{
+    border-color: d9d9d9;
+    background: #9b59b6;
+
 
 }
 
-.btn{
-    width:100px;
-    height: 40px;
-    background:none;
-    border:2px solid whitesmoke;
-    margin-top: 12px;
-    color:black;
-    font-size: 15px;
-    border-bottom-right-radius:5px ;
-    border-bottom-right-radius:5px ;
-
+form input[type="radio"]{
+    display: none;
 }
+
+form .button{
+height: 40px;
+margin:40px 0 ;
+
+} 
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color:white;
+    background:linear-gradient(130deg, #71b7e6,#9b59b6);
+    font-size: 18px;
+    font-weight:450;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+form .button input:hover{
+    background:linear-gradient(130deg, #71b7e6,#9b59b6);
+}
+
+@media (max-width: 584px){
+    .contain{
+        max-width: 100%;
+    }
+    form .user-detail .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .gender-details .category{
+        width: 100%;
+}
+.contain form .user-detail{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+}
+
 
